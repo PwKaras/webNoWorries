@@ -1,0 +1,238 @@
+/* specific style to "kontakt"
+specyfic style has tag "4" */
+
+.web-main4 {
+    grid-column: 1/13;
+}
+
+.main4-title {
+    display: none;
+}
+
+/* icon */
+.fas {
+    padding: 0.5rem;
+    /* color: #b7deed; */
+}
+
+.article-content {
+    padding: 0 1rem;
+}
+
+/* contact detail */
+.author {
+    background-color: #b7deed;
+    opacity: 0.8;
+}
+
+.author .author-name,
+.author .author-phone,
+.author .author-mail {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.author .author-name {
+    padding-top: 1rem;
+}
+
+.author .author-name-name,
+.author .author-phone-number,
+.author .author-mail-address {
+    padding: 0.5rem;
+}
+
+.author .author-mail-address {
+    margin-bottom: 1rem;
+}
+
+/* form */
+.form .form-first-name,
+.form .form-last-name,
+.form .form-mail,
+.form .form-message {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.form .form-error {
+    display: none;
+}
+
+.form input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 0.1rem solid grey;
+    outline: 0px;
+}
+
+.form textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 0.1rem solid grey;
+    outline: 0px;
+}
+
+.form input:invalid+.form-error,
+.form textarea:invalid+.form-error {
+    display: block;
+    color: red;
+}
+
+
+.form input:valid,
+.form textarea:valid {
+    border: 0.3rem solid rgb(42, 170, 42, 0.8);
+}
+
+.form input:invalid,
+.form textarea:invalid {
+    border: 0.3rem solid rgb(255, 0, 0, 0.7);
+}
+
+.form input:placeholder-shown,
+.form textarea:placeholder-shown {
+    border: 0.1rem solid grey;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 0.3rem solid #b7deed;
+}
+
+.form input:placeholder-shown+.form-error,
+.form textarea:placeholder-shown+.form-error {
+    display: none;
+}
+
+/* buton submit */
+
+.button-box {
+    display: grid;
+    padding-left: 2rem;
+}
+
+button {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: #b7deed;
+    max-width: 31rem;
+}
+
+/* map and address */
+.three .link {
+    padding: 0 1rem;
+}
+
+@media (min-width:601px) {
+
+    body {
+        gap: 1rem
+    }
+
+    .web-main4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .main4-title {
+        display: block;
+        grid-column: 1/span 12;
+        grid-row: 1;
+        background-color: white;
+    }
+
+    .main4-title h2 {
+        padding: 0;
+    }
+
+    .web-main4 .one {
+        grid-column: 1/span 12;
+        grid-row: 2;
+    }
+
+    .web-main4 .two {
+        grid-column: 1/span 12;
+        grid-row: 3;
+    }
+
+    /* contact detail */
+    .author {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .one .author-mail {
+        padding-bottom: 1rem;
+        margin-bottom: 0
+    }
+
+    /* contact form */
+    .form {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .form-first-name {
+        padding-top: 1rem;
+    }
+
+    .form input {
+        width: 25rem;
+    }
+
+    .button-box {
+        padding: 1rem;
+    }
+
+    /* map and address */
+    .web-main4 .three {
+        grid-column: 1/span 12;
+        grid-row: 4;
+    }
+
+    .three p {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .three .address-detail {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .web-main4 .article-header {
+        margin-bottom: 1rem;
+    }
+
+    .web-main4 .three .article-content {
+        margin-bottom: 1rem;
+    }
+
+    .contact-address {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .contact-address .map {
+        grid-column: 1/span 9;
+    }
+
+    .contact-address .address-detail {
+        grid-column: 10/span 3;
+    }
+
+    .link a {
+        background-color: white;
+        opacity: 0.8;
+    }
+
+
+}

@@ -1,0 +1,91 @@
+/* specific style to "relacja-z-podrozy.html"
+specyfic style has tag "3" */
+
+    /* article shortcouts */
+.web-main3 {
+    grid-column: 1/13;
+}
+
+.main3-title {
+    display: none;
+}
+
+/* article - full content */
+.web-main3-cont {
+    grid-column: 1/13;
+}
+
+.web-main3-cont ul {
+    margin: 0;
+    padding: 1rem;
+    background-color: #b7deed;
+    opacity: 0.9;
+}
+
+.web-main3-cont li {
+    margin: 0;
+    padding: 1rem;
+}
+
+@media (min-width:601px) {
+
+    body {
+        gap: 1rem
+    }
+
+    /* article shortcouts */
+    .web-main3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .web-main3 section {
+        background-color: #b7deed;
+        opacity: 0.9;
+    }
+
+    .main3-article:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+    }
+
+    .main3-title {
+        display: block;
+        grid-column: 1/span 12;
+        grid-row: 1;
+    }
+    .main3-title h2 {
+        padding: 0;
+    }
+
+
+    .main3-title a {
+        background-color: white
+    }
+
+    .web-main3 .one {
+        grid-column: 1/span 3;
+        grid-row: 2;
+    }
+
+    .web-main3 .two {
+        grid-column: 4/span 3;
+        grid-row: 2;
+    }
+
+    .web-main3 .three {
+        grid-column: 7/span 3;
+        grid-row: 2;
+    }
+
+    .web-main3 .four {
+        grid-column: 10/span 3;
+        grid-row: 2;
+    }
+
+    /* article - full content */
+    .web-main3-cont section {
+        margin-bottom: 1rem
+    }
+}

@@ -1,0 +1,126 @@
+/* specific style to "kontakt"
+specyfic style has tag "4" */
+
+
+/* section 'o nas czyli 4 pory roku w 3 tygodnie */
+.web-main2 {
+    grid-column: 1/13;
+}
+
+.main2-title {
+    display: none;
+}
+
+/* table */
+.table-container {
+    display: none;
+}
+
+.table-introduction {
+    display: none;
+}
+
+
+@media (min-width:601px) {
+
+    body {
+        gap: 1rem
+    }
+
+    /* title */
+    .main2-title {
+        display: block;
+        grid-column: 1/span 12;
+        grid-row: 1;
+    }
+
+    .main2-title h2 {
+        padding: 0;
+    }
+
+    .main2-title a {
+        background-color: white
+    }
+
+    /* table */
+    .table-introduction {
+        display: block;
+    }
+
+    .content-table {
+        padding: 1rem;
+        background-color: #b7deed;
+        opacity: 0.9;
+        margin: 0rem;
+    }
+
+    .table-container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .weather {
+        border-collapse: collapse;
+    }
+
+    .weather th,
+    .weather td {
+        padding: 1rem;
+        border: 0.1rem solid grey;
+        border-spacing: 0rem;
+    }
+
+    .weather tbody td:nth-child(3) {
+        text-align: center;
+    }
+
+    .weather tbody td:nth-child(4) {
+        text-align: center;
+    }
+
+    .weather th {
+        background-color: rgb(45, 182, 45, 0.8);
+    }
+
+    .weather tbody tr:nth-child(2n) {
+        background-color: rgb(219, 219, 22, 0.8);
+    }
+
+    .weather tbody tr:nth-child(2n+1) {
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    .weather tbody tr:last-child {
+        background-color: inherit;
+    }
+
+    .weather tbody tr:last-child td {
+        border: 0;
+        padding: 0;
+    }
+
+    /* gallery */
+
+    .gallery {
+        margin-top: 1rem;
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .image-box {
+        float: left;
+        width: 25%;
+        background-color: #b7deed;
+        border: 0.1rem solid grey;
+        transition: all 1s ease-in-out;
+    }
+    
+    .image-box:hover {
+        border: 0.1rem solid #b7deed;
+        transform: scale(1.1)
+    }   
+}
