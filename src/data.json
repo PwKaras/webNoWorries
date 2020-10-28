@@ -1,0 +1,13 @@
+[
+    {
+        "Imię": "Paweł",
+        "Nazwisko": "Kowalski",
+        "mail": "pawel@on.com",
+        "wiadomość": "Ala ma placki"
+    },
+    {
+        "Imię": "Adam",
+        "Nazwisko": "Kowalski",
+        "mail": "adam@on.com",
+        "wiadomość": "Ala ma placki"
+    }]

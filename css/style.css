@@ -162,7 +162,7 @@ h3 {
         gap: 1rem;
         padding: 2rem;
         margin: auto;
-        background-image: url(/images/pebbly-beach.JPG);
+        background-image: url(../images/pebbly-beach.JPG);
         background-attachment: fixed;
         background-size: cover;
     }
